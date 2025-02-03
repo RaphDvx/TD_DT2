@@ -1,8 +1,10 @@
+{
 uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
 with:
   pin-name: 'My personal site'
   path: './build'
-  pinata-api-key: 11111111111111111111
-  pinata-secret-api-key: 2222222222222222222222222222222222222222222222222222222222222222
+  pinata-api-key: secrets.PINATA_API_KEY
+  pinata-secret-api-key: secrets.PINATA_SECRET_API_KEY
   verbose: true
   remove-old: false
+}
